@@ -1,0 +1,56 @@
+{
+    "lr": 0.01,
+    "scales": 5,
+    "gamma": 0.001,
+    "use_fbp": true,
+    "iter_input": false,
+    "weight_init": "xavier_uniform",
+    "same_filter": false,
+    "use_bias": true,
+    "iter_rout": 2,
+    "capsules": [
+        [
+            1,
+            32
+        ],
+        [
+            2,
+            64
+        ],
+        [
+            2,
+            64
+        ],
+        [
+            2,
+            128
+        ],
+        [
+            2,
+            128
+        ]
+    ],
+    "skip_capsules": [
+        [
+            2,
+            64
+        ],
+        [
+            2,
+            64
+        ],
+        [
+            2,
+            128
+        ],
+        [
+            2,
+            128
+        ],
+        [
+            2,
+            128
+        ]
+    ],
+    "iterations": 15000
+}
